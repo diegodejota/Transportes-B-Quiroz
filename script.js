@@ -1,0 +1,55 @@
+const boton = document.getElementById("btnCotizar");
+
+boton.addEventListener("click", function(){
+
+const nombre = document.getElementById("nombre").value.trim();
+const telefono = document.getElementById("telefono").value.trim();
+const origen = document.getElementById("origen").value.trim();
+const destino = document.getElementById("destino").value.trim();
+
+    const fecha = document.getElementById("fecha").value;
+
+    const muebles = document.getElementById("muebles").value;
+
+    const piso = document.getElementById("piso").value;
+
+    const ascensor = document.getElementById("ascensor").value;
+
+    const detalle = document.getElementById("detalle").value;
+
+    if(nombre === "" || telefono === "" || origen === "" || destino === ""){
+
+    alert("Por favor completa los campos obligatorios.");
+
+    return;
+
+}
+
+const mensaje = `Hola, soy ${nombre}.
+
+Quisiera solicitar una cotización.
+
+Teléfono: ${telefono}
+Origen: ${origen}
+Destino: ${destino}
+Fecha: ${fecha}
+Cantidad de muebles: ${muebles}
+Piso: ${piso}
+Ascensor: ${ascensor}
+
+Información adicional:
+${detalle}`;
+
+const mensajeCodificado = encodeURIComponent(mensaje);
+
+window.open(
+
+`https://wa.me/56993693035?text=${mensajeCodificado}`,
+
+"_blank"
+
+);
+
+
+
+})
