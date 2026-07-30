@@ -4,6 +4,14 @@
     box-sizing:border-box;
 }
 
+*{
+    outline: 1px solid red;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -419,4 +427,172 @@ body{
     padding:25px;
     font-size:.9rem;
     color:#cbd5e1;
+}
+
+@media (max-width: 768px) {
+    .logo img{
+    width:95px;
+}
+.nav{
+    display:none;
+}
+    nav{
+    display:none;
+}
+.menu-toggle{
+
+    display:block;
+    font-size:2rem;
+    cursor:pointer;
+    background:none;
+    border:none;
+}
+
+    .btn-whatsapp{
+    padding:10px 18px;
+    font-size:.9rem;
+}
+
+    header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+    .header .container{
+    width:100%;
+    max-width:100%;
+    padding:0 15px;
+}
+
+    .btn-whatsapp{
+    padding: 10px 16px;
+    font-size: .85rem;
+}
+
+    .seccion1 h1{
+    font-size:2.5rem;
+    line-height:1.15;
+}
+
+    .seccion1 p{
+    font-size:1rem;
+    line-height:1.6;
+}
+
+    .seccion1-features{
+    text-align:left;
+    width:fit-content;
+    margin:30px auto;
+}
+
+    .seccion1-botones{
+    margin-top:30px;
+}
+
+.servicios{
+        padding:70px 20px;
+    }
+
+    .servicios h2{
+        font-size:2rem;
+        margin-bottom:15px;
+    }
+
+    .servicios > p{
+        font-size:1rem;
+        line-height:1.6;
+        max-width:100%;
+        margin:0 auto;
+    }
+
+    .cards-servicios{
+        grid-template-columns:1fr;
+        gap:25px;
+        margin-top:40px;
+    }
+
+    .card{
+        max-width:340px;
+        width:100%;
+        margin:0 auto;
+        padding:35px 25px;
+    }
+
+    .icono{
+        font-size:2.5rem;
+        margin-bottom:20px;
+    }
+
+    .card h3{
+        font-size:1.5rem;
+        margin-bottom:12px;
+    }
+
+    .card p{
+        font-size:1rem;
+        line-height:1.6;
+    }
+
+    .contacto{
+    padding:70px 20px;
+}
+
+    .contacto-contenedor{
+    grid-template-columns:1fr;
+    gap:30px;
+}
+
+    .contacto-formulario{
+    padding:30px 20px;
+}
+
+    .contacto-info{
+    padding:30px 20px;
+}
+
+    .fila{
+    grid-template-columns:1fr;
+}
+
+    .grupo-input input,
+    .grupo-input textarea,
+    .grupo-input select{
+    width:100%;
+    font-size:16px;
+}
+
+    .telefono-input{
+    width:100%;
+    display:flex;
+}
+
+    .telefono-input span{
+    white-space:nowrap;
+}
+
+    .telefono-input input{
+    flex:1;
+}
+
+    .nav{
+    position:absolute;
+    top:85px;
+    left:0;
+    width:100%;
+    background:#3774F2;
+    display:none;
+}
+
+    .nav.active{
+    display:block;
+}
+
+    .nav-links{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+    padding:30px 0;
+}
 }

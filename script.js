@@ -50,6 +50,34 @@ window.open(
 
 );
 
-
-
 })
+
+
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+menuToggle.addEventListener("click", function(){
+
+    navMenu.classList.toggle("active");
+
+    if(navMenu.classList.contains("active")){
+        menuToggle.innerHTML = "✕";
+    }else{
+        menuToggle.innerHTML = "☰";
+    }
+
+const links = document.querySelectorAll(".nav-links a");
+
+links.forEach(function(link){
+
+    link.addEventListener("click", function(){
+
+        navMenu.classList.remove("active");
+
+        menuToggle.innerHTML = "☰";
+
+    });
+
+});
+
+});
