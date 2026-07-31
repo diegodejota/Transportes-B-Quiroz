@@ -66,9 +66,25 @@ body{
     transition:.3s;
 }
 
+.btn-llamar{
+    background:#3774F2;
+    color:white;
+    text-decoration:none;
+    padding:14px 24px;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
 .btn-whatsapp:hover{
     transform:translateY(-2px);
     background:#20b85a;
+    box-shadow:0 15px 25px rgba(37,211,102,.35);
+}
+
+.btn-llamar:hover{
+    transform:translateY(-2px);
+    background:#300eab;
     box-shadow:0 15px 25px rgba(37,211,102,.35);
 }
 
@@ -355,6 +371,25 @@ body{
 .btn-contacto:hover{
     transform:translateY(-3px);
     box-shadow:0 10px 25px rgba(37,211,102,.35);
+}
+
+.btn-mail{
+    margin-top:15px;
+    width:100%;
+    padding:18px;
+    background:white;
+    color:#3774F2;
+    border:2px solid #3774F2;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-mail:hover{
+    background:#3774F2;
+    color:white;
 }
 
 .contacto-info{
