@@ -91,9 +91,10 @@ ${detalle}`;
 
 const mensajeCodificado = encodeURIComponent(mensaje);
 
-window.location.href =
-`mailto:jbustamante2529@gmail.com?subject=Solicitud de cotización&body=${mensajeCodificado}`;
-
+window.open(
+`https://mail.google.com/mail/?view=cm&fs=1&to=jbustamante2529@gmail.com&su=Solicitud de cotización&body=${mensajeCodificado}`,
+"_blank"
+);
 });
 
 
